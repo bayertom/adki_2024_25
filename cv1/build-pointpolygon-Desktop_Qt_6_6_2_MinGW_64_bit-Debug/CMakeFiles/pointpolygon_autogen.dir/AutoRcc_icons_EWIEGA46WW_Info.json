@@ -1,0 +1,29 @@
+{
+	"BUILD_DIR" : "H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/pointpolygon_autogen",
+	"CMAKE_BINARY_DIR" : "H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "H:/adki_2024_25/cv1/pointpolygon",
+	"CMAKE_SOURCE_DIR" : "H:/adki_2024_25/cv1/pointpolygon",
+	"INCLUDE_DIR" : "H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/pointpolygon_autogen/include",
+	"INPUTS" : 
+	[
+		"H:/adki_2024_25/cv1/images/icons/exit.png",
+		"H:/adki_2024_25/cv1/images/icons/clear.png",
+		"H:/adki_2024_25/cv1/images/icons/winding.png",
+		"H:/adki_2024_25/cv1/images/icons/clear_all.png",
+		"H:/adki_2024_25/cv1/images/icons/about.png",
+		"H:/adki_2024_25/cv1/images/icons/ray.png",
+		"H:/adki_2024_25/cv1/images/icons/pointpol.png",
+		"H:/adki_2024_25/cv1/images/icons/open_file.png"
+	],
+	"LOCK_FILE" : "H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/pointpolygon_autogen.dir/AutoRcc_icons_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "icons" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_icons.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.6.2/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/pointpolygon_autogen.dir/AutoRcc_icons_EWIEGA46WW_Used.txt",
+	"SOURCE" : "H:/adki_2024_25/cv1/pointpolygon/icons.qrc",
+	"VERBOSITY" : 0
+}

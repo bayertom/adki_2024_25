@@ -1,0 +1,22 @@
+# ninja log v5
+15	820	7615762158821810	pointpolygon_autogen/timestamp	4409eaa141ee3955
+15	820	7615762158821810	pointpolygon_autogen/mocs_compilation.cpp	4409eaa141ee3955
+15	820	7615762158821810	H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/pointpolygon_autogen/timestamp	4409eaa141ee3955
+1058	1266	7615762164021610	CMakeFiles/pointpolygon.dir/pointpolygon_autogen/EWIEGA46WW/qrc_icons.cpp.obj	bb3af3546f7ca76f
+15	820	7615762158821810	H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/pointpolygon_autogen/mocs_compilation.cpp	4409eaa141ee3955
+1043	3153	7615762181960910	CMakeFiles/pointpolygon.dir/main.cpp.obj	e9646680e1926693
+824	1024	7615762161621520	pointpolygon_autogen/EWIEGA46WW/qrc_icons.cpp	ab3da351062283e9
+824	1024	7615762161621520	H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/pointpolygon_autogen/EWIEGA46WW/qrc_icons.cpp	ab3da351062283e9
+1033	2980	7615762181191620	CMakeFiles/pointpolygon.dir/pointpolygon_autogen/mocs_compilation.cpp.obj	6edebb5ce75a135b
+1025	3164	7615762182981330	CMakeFiles/pointpolygon.dir/mainform.cpp.obj	430725218852ca08
+3171	3642	7615762187771470	pointpolygon.exe	642f27d2f38277d
+31	836	7615781575604096	pointpolygon_autogen/timestamp	4409eaa141ee3955
+31	836	7615781575604096	pointpolygon_autogen/mocs_compilation.cpp	4409eaa141ee3955
+31	836	7615781575604096	H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/pointpolygon_autogen/timestamp	4409eaa141ee3955
+31	836	7615781575604096	H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/pointpolygon_autogen/mocs_compilation.cpp	4409eaa141ee3955
+841	3380	7615781601729430	CMakeFiles/pointpolygon.dir/pointpolygon_autogen/mocs_compilation.cpp.obj	6edebb5ce75a135b
+868	7176	7615781639830200	CMakeFiles/pointpolygon.dir/draw.cpp.obj	aa5185376259c4c5
+21	306	7615790996369530	pointpolygon_autogen/timestamp	4409eaa141ee3955
+21	306	7615790996369530	pointpolygon_autogen/mocs_compilation.cpp	4409eaa141ee3955
+21	306	7615790996369530	H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/pointpolygon_autogen/timestamp	4409eaa141ee3955
+21	306	7615790996369530	H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/pointpolygon_autogen/mocs_compilation.cpp	4409eaa141ee3955

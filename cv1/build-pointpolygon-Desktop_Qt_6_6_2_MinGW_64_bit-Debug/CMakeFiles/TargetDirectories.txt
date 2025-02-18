@@ -1,0 +1,9 @@
+H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/pointpolygon.dir
+H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/install.dir
+H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/pointpolygon_autogen_timestamp_deps.dir
+H:/adki_2024_25/cv1/build-pointpolygon-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/pointpolygon_autogen.dir

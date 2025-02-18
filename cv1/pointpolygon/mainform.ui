@@ -33,7 +33,7 @@
      <x>0</x>
      <y>0</y>
      <width>1159</width>
-     <height>22</height>
+     <height>18</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -89,8 +89,8 @@
   </widget>
   <action name="actionOpen">
    <property name="icon">
-    <iconset resource="icons.qrc">
-     <normaloff>:/images/icons/open_file.png</normaloff>:/images/icons/open_file.png</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/images/icons/open_file.png</normaloff>:/icons/images/icons/open_file.png</iconset>
    </property>
    <property name="text">
     <string>Open</string>
@@ -101,8 +101,8 @@
   </action>
   <action name="actionExit">
    <property name="icon">
-    <iconset resource="icons.qrc">
-     <normaloff>:/images/icons/exit.png</normaloff>:/images/icons/exit.png</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/images/icons/exit.png</normaloff>:/icons/images/icons/exit.png</iconset>
    </property>
    <property name="text">
     <string>Exit</string>
@@ -116,8 +116,8 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="icons.qrc">
-     <normaloff>:/images/icons/pointpol.png</normaloff>:/images/icons/pointpol.png</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/images/icons/pointpol.png</normaloff>:/icons/images/icons/pointpol.png</iconset>
    </property>
    <property name="text">
     <string>Point/Polygon</string>
@@ -128,8 +128,8 @@
   </action>
   <action name="actionClear_data">
    <property name="icon">
-    <iconset resource="icons.qrc">
-     <normaloff>:/images/icons/clear.png</normaloff>:/images/icons/clear.png</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/images/icons/clear.png</normaloff>:/icons/images/icons/clear.png</iconset>
    </property>
    <property name="text">
     <string>Clear results</string>
@@ -137,8 +137,8 @@
   </action>
   <action name="actionWinding_Number">
    <property name="icon">
-    <iconset resource="icons.qrc">
-     <normaloff>:/images/icons/winding.png</normaloff>:/images/icons/winding.png</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/images/icons/clear_all.png</normaloff>:/icons/images/icons/clear_all.png</iconset>
    </property>
    <property name="text">
     <string>Winding Number</string>
@@ -149,8 +149,8 @@
   </action>
   <action name="actionRay_Crossing">
    <property name="icon">
-    <iconset resource="icons.qrc">
-     <normaloff>:/images/icons/ray.png</normaloff>:/images/icons/ray.png</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/images/icons/ray.png</normaloff>:/icons/images/icons/ray.png</iconset>
    </property>
    <property name="text">
     <string>Ray Crossing</string>
@@ -161,8 +161,8 @@
   </action>
   <action name="actionClear_all">
    <property name="icon">
-    <iconset resource="icons.qrc">
-     <normaloff>:/images/icons/clear_all.png</normaloff>:/images/icons/clear_all.png</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/images/icons/winding.png</normaloff>:/icons/images/icons/winding.png</iconset>
    </property>
    <property name="text">
     <string>Clear all</string>
@@ -181,7 +181,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="icons.qrc"/>
+  <include location="images.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -6,23 +6,33 @@ Draw::Draw(QWidget *parent)
 {
     q.setX(0);
     q.setY(0);
+    add_point = false;
 
 }
 
 
 void Draw::mousePressEvent(QMouseEvent *e)
 {
-    //Add point to polygon
-
     //Get x, y coordinates
     double x = e->pos().x();
     double y = e->pos().y();
 
-    //Create point
-    QPointF p(x, y);
+    //Set x,y to q
+    if (add_point)
+    {
+        q.setX(x);
+        q.setY(y);
+    }
 
     //Add point to polygon
-    pol.push_back(p);
+    else
+    {
+        //Create point
+        QPointF p(x, y);
+
+        //Add point to polygon
+        pol.push_back(p);
+    }
 
     //Repaint screen
     repaint();
@@ -37,11 +47,28 @@ void Draw::paintEvent(QPaintEvent *event)
     //Create object for drawing
     painter.begin(this);
 
-    //Set graphic attributes
+    //Set graphic attributes, polygon
+    painter.setPen(Qt::GlobalColor::red);
+    painter.setBrush(Qt::GlobalColor::yellow);
 
-    //Begin draw
+    //Draw polygon
     painter.drawPolygon(pol);
+
+    //Set graphic attributes, point
+    painter.setPen(Qt::GlobalColor::black);
+    painter.setBrush(Qt::GlobalColor::blue);
+
+    //Draw point
+    const int r = 5;
+    painter.drawEllipse(q.x()-r,q.y()-r, 2*r,2*r);
 
     //End draw
     painter.end();
+}
+
+
+void Draw::switch_source()
+{
+    //Input q or polygon vertex
+    add_point = !add_point;
 }

@@ -17,6 +17,11 @@ public:
     MainForm(QWidget *parent = nullptr);
     ~MainForm();
 
+private slots:
+    void on_actionPoint_Polygon_triggered();
+
+    void on_actionRay_Crossing_triggered();
+
 private:
     Ui::MainForm *ui;
 };

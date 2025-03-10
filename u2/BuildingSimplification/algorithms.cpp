@@ -8,11 +8,11 @@ Algorithms::Algorithms() {}
 double Algorithms::get2LinesAngle(const QPointF &p1, const QPointF &p2, const QPointF &p3, const QPointF &p4)
 {
     //Compute angle between two lines
-    double u_x  = p2.x() - p1.x();
-    double u_y  = p2.y() - p1.y();
+    double u_x = p2.x() - p1.x();
+    double u_y = p2.y() - p1.y();
 
-    double v_x  = p4.x() - p3.x();
-    double v_y  = p4.y() - p3.y();
+    double v_x = p4.x() - p3.x();
+    double v_y = p4.y() - p3.y();
 
     //Dot product
     double dot = u_x*v_x + u_y*v_y;

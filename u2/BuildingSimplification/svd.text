@@ -1,0 +1,19 @@
+   //Create matrix A
+    Eigen::MatrixXd A(n, 2);
+
+    //Compute means of coordinates over columns
+    Eigen::RowVector3d M = A.colwise().mean();
+
+    //Subtract mean: B = A - M
+    Eigen::MatrixXd B = A.rowwise() - M;
+
+    //Covariance matrix: C = B' * B / (m - 1)
+    Eigen::MatrixXd C = (B.adjoint() * B) / double(A.rows() - 1);
+
+    //Compute SVD, full version: [U, S, V] = svd(C)
+    Eigen::JacobiSVD<Eigen::MatrixXd> svd(C, Eigen::ComputeFullV | Eigen::ComputeFullU);
+
+    //
+    Eigen::MatrixXd U = svd.matrixU();
+    Eigen::MatrixXd S = svd.singularValues();
+    Eigen::MatrixXd V = svd.matrixV();

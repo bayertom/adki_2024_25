@@ -3,6 +3,10 @@
 #include "sortpointsbyy.h"
 #include <cmath>
 
+#include "Eigen/Dense"
+#include "Eigen/Sparse"
+#include "Eigen/Core"
+
 Algorithms::Algorithms() {}
 
 double Algorithms::get2LinesAngle(const QPointF &p1, const QPointF &p2, const QPointF &p3, const QPointF &p4)
@@ -140,14 +144,13 @@ QPolygonF Algorithms::rotate(const QPolygonF &pol, double sigma)
 }
 
 
-static double getArea(const QPolygonF &pol)
+double Algorithms::getArea(const QPolygonF &pol)
 {
     //Compute area using LH formula
-
     int n = pol.size();
     double area = 0;
 
-    // Proces point one by one
+    //Proces points one by one
     for(int i = 0;i<n;i++)
     {
         area += pol[i].x() * (pol[(i+1)%n].y()-pol[(i-1+n)%n].y());
@@ -157,7 +160,7 @@ static double getArea(const QPolygonF &pol)
 }
 
 
-static QPolygonF resize(const QPolygonF &pol, const QPolygonF &mmbox)
+QPolygonF Algorithms::resize(const QPolygonF &pol, const QPolygonF &mmbox)
 {
     //Resize minimum area enclosing rectangle in order to have the same area as a building
     double Ab = getArea(pol);
@@ -180,7 +183,7 @@ static QPolygonF resize(const QPolygonF &pol, const QPolygonF &mmbox)
     double u4x = mmbox[3].x() - xt;
     double u4y = mmbox[3].y() - yt;
 
-    // Compute vertices of the resized rectangle
+    //Compute vertices of the resized rectangle
     double x1r = xt + sqrt(k)*u1x;
     double y1r = yt + sqrt(k)*u1y;
 
@@ -206,7 +209,7 @@ static QPolygonF resize(const QPolygonF &pol, const QPolygonF &mmbox)
 }
 
 
-QPolygonF Algorithms::getMAER(const QPolygonF &pol)
+QPolygonF Algorithms::createMAER(const QPolygonF &pol)
 {
     //Create minimun area enclosing rectangle over the building
     auto [maer, area_min] = minMaxBox(pol);
@@ -238,7 +241,11 @@ QPolygonF Algorithms::getMAER(const QPolygonF &pol)
         }
 
     }
+}
 
+
+QPolygonF Algorithms::createERPCA(const QPolygonF &pol)
+{
 
 }
 

@@ -118,10 +118,10 @@ std::tuple<QPolygonF, double> Algorithms::minMaxBox(const QPolygonF &pol)
 
 QPolygonF Algorithms::rotate(const QPolygonF &pol, double sigma)
 {
-    // rotate polygon by angle sigma
+    //Rotate polygon by angle sigma
     QPolygonF pol_rotated;
 
-    // Proces polygon one by one
+    //Proces polygon one by one
     for(QPointF point: pol)
     {
         //Get coordinates
@@ -137,7 +137,6 @@ QPolygonF Algorithms::rotate(const QPolygonF &pol, double sigma)
 
         //Add to the vecotor
         pol_rotated.push_back(p);
-
     }
 
     return pol_rotated;
@@ -150,7 +149,7 @@ double Algorithms::getArea(const QPolygonF &pol)
     int n = pol.size();
     double area = 0;
 
-    //Proces points one by one
+    //Process points one by one
     for(int i = 0;i<n;i++)
     {
         area += pol[i].x() * (pol[(i+1)%n].y()-pol[(i-1+n)%n].y());

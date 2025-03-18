@@ -246,7 +246,7 @@ QPolygonF Algorithms::createMAER(const QPolygonF &pol)
     //Resize min-max box
     QPolygonF mmbox_min_res = resize(pol,mmbox_min);
 
-    //Rotate min-max box with minimum area
+    //Rotate min-max box by sigma min
     return rotate(mmbox_min_res, sigma_min);
 }
 
@@ -295,7 +295,7 @@ QPolygonF Algorithms::createERPCA(const QPolygonF &pol)
         //Resize min-max box
         QPolygonF mmbox_res = resize(pol,mmbox);
 
-        //Rotate min-max box with minimum area
+        //Rotate min-max box by sigma
         return rotate(mmbox_res, sigma);
     }
 

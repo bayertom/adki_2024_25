@@ -4,6 +4,7 @@
 Draw::Draw(QWidget *parent)
     : QWidget{parent}
 {
+    /*
     QPointF a(50,70);
     QPointF b(150,50);
     QPointF c(150,130);
@@ -13,7 +14,7 @@ Draw::Draw(QWidget *parent)
     building.push_back(b);
     building.push_back(c);
     building.push_back(d);
-
+*/
 }
 
 

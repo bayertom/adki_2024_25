@@ -4,6 +4,9 @@
 
 #include <tuple>
 
+#include "Eigen/Dense"
+#include "Eigen/Core"
+
 class Algorithms
 {
 public:

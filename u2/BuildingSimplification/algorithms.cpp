@@ -245,7 +245,52 @@ QPolygonF Algorithms::createMAER(const QPolygonF &pol)
 
 QPolygonF Algorithms::createERPCA(const QPolygonF &pol)
 {
+    //Create enclosing rectangle using PCA
+    int n = pol.size();
 
+    //Create matrix A
+    Eigen::MatrixXd A(n, 2);
+
+    //Add elements to the matrix
+    for (int i = 0; i < n; i++)
+    {
+        A(i, 0) = pol[i].x();
+        A(i, 1) = pol[i].y();
+    }
+
+    //Compute means of coordinates over columns
+    Eigen::RowVector3d M = A.colwise().mean();
+
+    //Subtract mean: B = A - M
+    Eigen::MatrixXd B = A.rowwise() - M;
+
+    //Covariance matrix: C = B' * B / (n - 1)
+    Eigen::MatrixXd C = (B.adjoint() * B) / double(A.rows() - 1);
+
+    //Compute SVD, full version: [U, S, V] = svd(C)
+    Eigen::JacobiSVD<Eigen::MatrixXd> svd(C, Eigen::ComputeFullV | Eigen::ComputeFullU);
+
+    //Get matrices
+    Eigen::MatrixXd U = svd.matrixU();
+    Eigen::MatrixXd S = svd.singularValues();
+    Eigen::MatrixXd V = svd.matrixV();
+
+    //Compute sigma
+    double sigma = atan2(V(0, 1), V(0,0));
+
+    //Rotate polygon by minus sigma
+    QPolygonF pol_rot = rotate(pol, -sigma);
+
+    //Find min-max box
+    auto [mmbox, area] = minMaxBox(pol_rot);
+
+    //Rotate min-max box (create enclosing rectangle)
+    QPolygonF mbr = rotate(mmbox, sigma);
+
+    //Resize enclosing rectangle
+    QPolygonF mbr_r = resize(pol, mmbox);
+
+    return mbr_r;
 }
 
 

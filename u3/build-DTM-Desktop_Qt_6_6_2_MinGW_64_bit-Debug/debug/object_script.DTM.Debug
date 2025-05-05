@@ -1,0 +1,14 @@
+debug/algorithms.o
+debug/draw.o
+debug/edge.o
+debug/main.o
+debug/mainform.o
+debug/qpoint3df.o
+debug/settings2.o
+debug/sortpointsbyx.o
+debug/sortpointsbyy.o
+debug/triangle.o
+debug/qrc_icons.o
+debug/moc_draw.o
+debug/moc_mainform.o
+debug/moc_settings2.o
